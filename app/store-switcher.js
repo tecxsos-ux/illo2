@@ -580,9 +580,10 @@
 
   const TRANSLATIONS = {
     en: {
-      shippingEur: "Free EU shipping over € 49.00 · Factory-direct from Hong Kong",
+      shippingEur: "Free EU & Swiss shipping over € 49.00 · Factory-direct from Hong Kong",
       shippingChf: "Free shipping over CHF 49.00 · Factory-direct from Hong Kong",
       navShop: "Shop",
+      navIndustry: "Swiss Industry",
       navAbout: "About",
       navWholesale: "Wholesale",
       heroBadge: "Factory-direct from Hong Kong since 1986",
@@ -614,9 +615,10 @@
       currLabel: "Currency"
     },
     de: {
-      shippingEur: "Kostenloser Versand in die EU ab € 49.00 · Direkt ab Hongkonger Manufaktur",
+      shippingEur: "Kostenloser Versand in die Schweiz & EU ab € 49.00 · Direkt ab Manufaktur",
       shippingChf: "Kostenloser Versand ab CHF 49.00 · Direkt ab Hongkonger Manufaktur",
       navShop: "Shop",
+      navIndustry: "Schweizer Industrie",
       navAbout: "Über uns",
       navWholesale: "Grosshandel",
       heroBadge: "Direkt ab Hongkonger Manufaktur seit 1986",
@@ -648,9 +650,10 @@
       currLabel: "Währung"
     },
     fr: {
-      shippingEur: "Livraison UE offerte dès € 49.00 · Direct d'usine à Hong Kong",
+      shippingEur: "Livraison Suisse & UE offerte dès € 49.00 · Direct d'usine à Hong Kong",
       shippingChf: "Livraison offerte dès CHF 49.00 · Direct d'usine à Hong Kong",
       navShop: "Boutique",
+      navIndustry: "Industrie Suisse",
       navAbout: "À propos",
       navWholesale: "Vente en gros",
       heroBadge: "Direct d'usine à Hong Kong depuis 1986",
@@ -719,8 +722,9 @@
           <a href="/" style="text-decoration:none; color:#1A1A1A; font-size:24px; font-weight:700;">ilo<span style="color:#FF5A36;">.</span><span style="font-size:10px; text-transform:uppercase; letter-spacing:0.18em; color:#666; margin-left:8px;">easymate</span></a>
           <button type="button" id="close-mobile-menu" aria-label="Close menu" style="background:none; border:none; padding:8px; cursor:pointer; font-size:24px; color:#1A1A1A; font-weight:bold;">✕</button>
         </div>
-        <nav style="display:flex; flex-direction:column; gap:24px; margin-top:32px; font-size:28px; font-weight:600;">
+        <nav style="display:flex; flex-direction:column; gap:20px; margin-top:32px; font-size:24px; font-weight:600;">
           <a href="/shop/" class="mobile-nav-link" style="text-decoration:none; color:#1A1A1A;">Shop</a>
+          <a href="/industry/" class="mobile-nav-link" style="text-decoration:none; color:#FF5A36;">Swiss Industry</a>
           <a href="/about/" class="mobile-nav-link" style="text-decoration:none; color:#1A1A1A;">About</a>
           <a href="/wholesale/" class="mobile-nav-link" style="text-decoration:none; color:#1A1A1A;">Wholesale</a>
         </nav>
@@ -793,18 +797,12 @@
     }
 
     // 4. Update Nav links text (header + mobile drawer)
-    const navLinks = document.querySelectorAll('header nav[aria-label="Main"] ul li a');
-    if (navLinks.length >= 3) {
-      if (navLinks[0]) navLinks[0].textContent = t.navShop;
-      if (navLinks[1]) navLinks[1].textContent = t.navAbout;
-      if (navLinks[2]) navLinks[2].textContent = t.navWholesale;
-    }
-
     const drawerNavLinks = document.querySelectorAll('#mobile-menu-drawer .mobile-nav-link');
-    if (drawerNavLinks.length >= 3) {
+    if (drawerNavLinks.length >= 4) {
       drawerNavLinks[0].textContent = t.navShop;
-      drawerNavLinks[1].textContent = t.navAbout;
-      drawerNavLinks[2].textContent = t.navWholesale;
+      drawerNavLinks[1].textContent = t.navIndustry;
+      drawerNavLinks[2].textContent = t.navAbout;
+      drawerNavLinks[3].textContent = t.navWholesale;
     }
 
     const drawerLangLabel = document.querySelector('#mobile-menu-drawer .mobile-lang-label');
@@ -859,16 +857,9 @@
         }
       });
     });
-
-    // 7. Update main text on Home page if present
-    const heroTitle = document.querySelector('main h1');
-    if (heroTitle && heroTitle.textContent.includes('organisation')) {
-      heroTitle.textContent = t.heroTitle;
-    }
   }
 
   document.addEventListener('click', function(e) {
-    // Check if clicked button is mobile menu toggle or close button
     const btn = e.target.closest('button[aria-label="Open menu"], button[aria-label="Close menu"], #close-mobile-menu');
     if (btn) {
       e.preventDefault();
@@ -877,7 +868,6 @@
       return;
     }
 
-    // Check if clicked language button
     const langBtn = e.target.closest('[aria-label="Language"] button');
     if (langBtn) {
       e.preventDefault();
@@ -886,7 +876,6 @@
       return;
     }
 
-    // Check if clicked currency button
     const currBtn = e.target.closest('[aria-label="Currency"] button');
     if (currBtn) {
       e.preventDefault();
@@ -896,7 +885,6 @@
       return;
     }
 
-    // Check if clicked nav link inside drawer
     const navLink = e.target.closest('.mobile-nav-link');
     if (navLink) {
       toggleMobileMenu(true);
