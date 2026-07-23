@@ -708,6 +708,59 @@
     return '€ ' + (eur).toFixed(2);
   }
 
+  function createMobileDrawer() {
+    if (document.getElementById('mobile-menu-drawer')) return;
+    const drawerEl = document.createElement('div');
+    drawerEl.id = 'mobile-menu-drawer';
+    drawerEl.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; width:100vw; height:100vh; z-index:99999; background-color:#F7F5F0; padding:24px; box-sizing:border-box; flex-direction:column; justify-content:space-between; overflow-y:auto; font-family:sans-serif;';
+    drawerEl.innerHTML = `
+      <div>
+        <div style="display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(0,0,0,0.1); padding-bottom:16px;">
+          <a href="/" style="text-decoration:none; color:#1A1A1A; font-size:24px; font-weight:700;">ilo<span style="color:#FF5A36;">.</span><span style="font-size:10px; text-transform:uppercase; letter-spacing:0.18em; color:#666; margin-left:8px;">easymate</span></a>
+          <button type="button" id="close-mobile-menu" aria-label="Close menu" style="background:none; border:none; padding:8px; cursor:pointer; font-size:24px; color:#1A1A1A; font-weight:bold;">✕</button>
+        </div>
+        <nav style="display:flex; flex-direction:column; gap:24px; margin-top:32px; font-size:28px; font-weight:600;">
+          <a href="/shop/" class="mobile-nav-link" style="text-decoration:none; color:#1A1A1A;">Shop</a>
+          <a href="/about/" class="mobile-nav-link" style="text-decoration:none; color:#1A1A1A;">About</a>
+          <a href="/wholesale/" class="mobile-nav-link" style="text-decoration:none; color:#1A1A1A;">Wholesale</a>
+        </nav>
+      </div>
+      <div style="border-top:1px solid rgba(0,0,0,0.1); padding-top:20px; display:flex; flex-direction:column; gap:16px; margin-top: auto;">
+        <div style="display:flex; align-items:center; justify-content:space-between;">
+          <span class="mobile-lang-label" style="font-size:12px; font-weight:600; text-transform:uppercase; color:#666; letter-spacing: 0.1em;">Language</span>
+          <div role="group" aria-label="Language" style="display:flex; background:#FFF; border:1px solid #E5E5E5; border-radius:999px; padding:2px;">
+            <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; text-transform:uppercase; cursor:pointer;">en</button>
+            <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; text-transform:uppercase; cursor:pointer;">de</button>
+            <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; text-transform:uppercase; cursor:pointer;">fr</button>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:space-between;">
+          <span class="mobile-curr-label" style="font-size:12px; font-weight:600; text-transform:uppercase; color:#666; letter-spacing: 0.1em;">Currency</span>
+          <div role="group" aria-label="Currency" style="display:flex; background:#FFF; border:1px solid #E5E5E5; border-radius:999px; padding:2px;">
+            <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer;">€</button>
+            <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer;">CHF</button>
+          </div>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(drawerEl);
+  }
+
+  function toggleMobileMenu(forceClose) {
+    createMobileDrawer();
+    const drawer = document.getElementById('mobile-menu-drawer');
+    if (!drawer) return;
+    const isVisible = drawer.style.display === 'flex';
+    if (isVisible || forceClose) {
+      drawer.style.display = 'none';
+      document.body.style.overflow = '';
+    } else {
+      drawer.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      applyState();
+    }
+  }
+
   function applyState() {
     const lang = getLang();
     const curr = getCurrency();
@@ -719,9 +772,8 @@
       const bLang = btn.textContent.trim().toLowerCase();
       const isActive = bLang === lang;
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-      btn.className = isActive
-        ? 'rounded-full px-2.5 py-1 text-xs font-semibold uppercase transition-colors bg-ink text-cream'
-        : 'rounded-full px-2.5 py-1 text-xs font-semibold uppercase transition-colors text-muted hover:text-ink';
+      btn.style.backgroundColor = isActive ? '#1A1A1A' : 'transparent';
+      btn.style.color = isActive ? '#F7F5F0' : '#666';
     });
 
     // 2. Currency buttons UI
@@ -730,9 +782,8 @@
       const isEur = bText === '€' || bText === 'EUR';
       const isActive = (isEur && curr === 'EUR') || (!isEur && curr === 'CHF');
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-      btn.className = isActive
-        ? 'rounded-full px-2.5 py-1 text-xs font-semibold transition-colors bg-ink text-cream'
-        : 'rounded-full px-2.5 py-1 text-xs font-semibold transition-colors text-muted hover:text-ink';
+      btn.style.backgroundColor = isActive ? '#1A1A1A' : 'transparent';
+      btn.style.color = isActive ? '#F7F5F0' : '#666';
     });
 
     // 3. Update shipping header text
@@ -816,104 +867,45 @@
     }
   }
 
-  function setupEvents() {
-    document.querySelectorAll('[aria-label="Language"] button').forEach(btn => {
-      btn.onclick = (e) => {
-        e.preventDefault();
-        const l = btn.textContent.trim().toLowerCase();
-        setLang(l);
-      };
-    });
-
-    document.querySelectorAll('[aria-label="Currency"] button').forEach(btn => {
-      btn.onclick = (e) => {
-        e.preventDefault();
-        const bText = btn.textContent.trim();
-        const c = (bText === '€' || bText === 'EUR') ? 'EUR' : 'CHF';
-        setCurrency(c);
-      };
-    });
-  }
-
-  function setupMobileMenu() {
-    const menuBtn = document.querySelector('button[aria-label="Open menu"], button[aria-label="Close menu"]');
-    if (!menuBtn) return;
-
-    let drawer = document.getElementById('mobile-menu-drawer');
-    if (!drawer) {
-      drawer = document.createElement('div');
-      drawer.id = 'mobile-menu-drawer';
-      drawer.className = 'fixed inset-0 z-50 flex flex-col bg-cream/95 backdrop-blur-lg p-6 transition-all duration-300 opacity-0 pointer-events-none md:hidden';
-      drawer.style.backgroundColor = '#F7F5F0';
-      drawer.innerHTML = `
-        <div class="flex items-center justify-between border-b border-hairline pb-4">
-          <a class="font-display text-2xl font-semibold text-ink" href="/">ilo<span class="text-coral">.</span><span class="ml-2 text-[10px] font-sans font-semibold uppercase tracking-[0.18em] text-muted">easymate</span></a>
-          <button type="button" id="close-mobile-menu" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-ink hover:bg-sand" aria-label="Close menu">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
-        </div>
-        <div class="mt-8 flex flex-col justify-between flex-1">
-          <nav class="flex flex-col gap-6 text-3xl font-display font-semibold text-ink">
-            <a href="/shop/" class="mobile-nav-link hover:text-coral transition-colors">Shop</a>
-            <a href="/about/" class="mobile-nav-link hover:text-coral transition-colors">About</a>
-            <a href="/wholesale/" class="mobile-nav-link hover:text-coral transition-colors">Wholesale</a>
-          </nav>
-          <div class="mt-auto border-t border-hairline pt-6 flex flex-col gap-5">
-            <div class="flex items-center justify-between">
-              <span class="mobile-lang-label text-xs font-semibold uppercase tracking-wider text-muted">Language</span>
-              <div class="flex items-center rounded-full border border-hairline bg-white p-0.5" role="group" aria-label="Language">
-                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors bg-ink text-cream">en</button>
-                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors text-muted hover:text-ink">de</button>
-                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors text-muted hover:text-ink">fr</button>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="mobile-curr-label text-xs font-semibold uppercase tracking-wider text-muted">Currency</span>
-              <div class="flex items-center rounded-full border border-hairline bg-white p-0.5" role="group" aria-label="Currency">
-                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold transition-colors bg-ink text-cream">€</button>
-                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold transition-colors text-muted hover:text-ink">CHF</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-      document.body.appendChild(drawer);
-    }
-
-    function openMenu() {
-      menuBtn.setAttribute('aria-expanded', 'true');
-      drawer.classList.remove('opacity-0', 'pointer-events-none');
-      drawer.classList.add('opacity-100', 'pointer-events-auto');
-      document.body.style.overflow = 'hidden';
-      setupEvents();
-      applyState();
-    }
-
-    function closeMenu() {
-      menuBtn.setAttribute('aria-expanded', 'false');
-      drawer.classList.remove('opacity-100', 'pointer-events-auto');
-      drawer.classList.add('opacity-0', 'pointer-events-none');
-      document.body.style.overflow = '';
-    }
-
-    menuBtn.onclick = (e) => {
+  document.addEventListener('click', function(e) {
+    // Check if clicked button is mobile menu toggle or close button
+    const btn = e.target.closest('button[aria-label="Open menu"], button[aria-label="Close menu"], #close-mobile-menu');
+    if (btn) {
       e.preventDefault();
-      const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
-      if (isOpen) closeMenu();
-      else openMenu();
-    };
+      e.stopPropagation();
+      toggleMobileMenu();
+      return;
+    }
 
-    const closeBtn = drawer.querySelector('#close-mobile-menu');
-    if (closeBtn) closeBtn.onclick = closeMenu;
+    // Check if clicked language button
+    const langBtn = e.target.closest('[aria-label="Language"] button');
+    if (langBtn) {
+      e.preventDefault();
+      const l = langBtn.textContent.trim().toLowerCase();
+      setLang(l);
+      return;
+    }
 
-    drawer.querySelectorAll('.mobile-nav-link').forEach(link => {
-      link.onclick = closeMenu;
-    });
-  }
+    // Check if clicked currency button
+    const currBtn = e.target.closest('[aria-label="Currency"] button');
+    if (currBtn) {
+      e.preventDefault();
+      const bText = currBtn.textContent.trim();
+      const c = (bText === '€' || bText === 'EUR') ? 'EUR' : 'CHF';
+      setCurrency(c);
+      return;
+    }
+
+    // Check if clicked nav link inside drawer
+    const navLink = e.target.closest('.mobile-nav-link');
+    if (navLink) {
+      toggleMobileMenu(true);
+      return;
+    }
+  });
 
   function init() {
-    setupMobileMenu();
-    setupEvents();
+    createMobileDrawer();
     applyState();
   }
 
