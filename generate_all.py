@@ -156,32 +156,32 @@ js_content = f"""(function() {{
     if (document.getElementById('mobile-menu-drawer')) return;
     const drawerEl = document.createElement('div');
     drawerEl.id = 'mobile-menu-drawer';
-    drawerEl.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; width:100vw; height:100vh; z-index:99999; background-color:#F7F5F0; padding:24px; box-sizing:border-box; flex-direction:column; justify-content:space-between; overflow-y:auto; font-family:sans-serif;';
+    drawerEl.style.cssText = 'display:none; position:fixed; top:0; left:0; right:0; bottom:0; width:100vw; height:100vh; z-index:99999; background-color:#FFFFFF; padding:24px; box-sizing:border-box; flex-direction:column; justify-content:space-between; overflow-y:auto; font-family:sans-serif;';
     drawerEl.innerHTML = `
       <div>
         <div style="display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(0,0,0,0.1); padding-bottom:16px;">
-          <a href="/" style="text-decoration:none; color:#1A1A1A; font-size:24px; font-weight:700;">ilo<span style="color:#FF5A36;">.</span><span style="font-size:10px; text-transform:uppercase; letter-spacing:0.18em; color:#666; margin-left:8px;">easymate</span></a>
-          <button type="button" id="close-mobile-menu" aria-label="Close menu" style="background:none; border:none; padding:8px; cursor:pointer; font-size:24px; color:#1A1A1A; font-weight:bold;">✕</button>
+          <a href="/" style="text-decoration:none; color:#2E1065; font-size:24px; font-weight:700;">ilo<span style="color:#9333EA;">.</span><span style="font-size:10px; text-transform:uppercase; letter-spacing:0.18em; color:#8B5CF6; margin-left:8px;">easymate</span></a>
+          <button type="button" id="close-mobile-menu" aria-label="Close menu" style="background:none; border:none; padding:8px; cursor:pointer; font-size:24px; color:#2E1065; font-weight:bold;">✕</button>
         </div>
         <nav style="display:flex; flex-direction:column; gap:20px; margin-top:32px; font-size:24px; font-weight:600;">
-          <a href="/shop/" class="mobile-nav-link" style="text-decoration:none; color:#1A1A1A;">Shop</a>
-          <a href="/industry/" class="mobile-nav-link" style="text-decoration:none; color:#FF5A36;">Swiss Industry</a>
-          <a href="/about/" class="mobile-nav-link" style="text-decoration:none; color:#1A1A1A;">About</a>
-          <a href="/wholesale/" class="mobile-nav-link" style="text-decoration:none; color:#1A1A1A;">Wholesale</a>
+          <a href="/shop/" class="mobile-nav-link" style="text-decoration:none; color:#2E1065;">Shop</a>
+          <a href="/industry/" class="mobile-nav-link" style="text-decoration:none; color:#9333EA;">Swiss Industry</a>
+          <a href="/about/" class="mobile-nav-link" style="text-decoration:none; color:#2E1065;">About</a>
+          <a href="/wholesale/" class="mobile-nav-link" style="text-decoration:none; color:#2E1065;">Wholesale</a>
         </nav>
       </div>
       <div style="border-top:1px solid rgba(0,0,0,0.1); padding-top:20px; display:flex; flex-direction:column; gap:16px; margin-top: auto;">
         <div style="display:flex; align-items:center; justify-content:space-between;">
-          <span class="mobile-lang-label" style="font-size:12px; font-weight:600; text-transform:uppercase; color:#666; letter-spacing: 0.1em;">Language</span>
-          <div role="group" aria-label="Language" style="display:flex; background:#FFF; border:1px solid #E5E5E5; border-radius:999px; padding:2px;">
+          <span class="mobile-lang-label" style="font-size:12px; font-weight:600; text-transform:uppercase; color:#8B5CF6; letter-spacing: 0.1em;">Language</span>
+          <div role="group" aria-label="Language" style="display:flex; background:#FFF; border:1px solid #E9D5FF; border-radius:999px; padding:2px;">
             <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; text-transform:uppercase; cursor:pointer;">en</button>
             <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; text-transform:uppercase; cursor:pointer;">de</button>
             <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; text-transform:uppercase; cursor:pointer;">fr</button>
           </div>
         </div>
         <div style="display:flex; align-items:center; justify-content:space-between;">
-          <span class="mobile-curr-label" style="font-size:12px; font-weight:600; text-transform:uppercase; color:#666; letter-spacing: 0.1em;">Currency</span>
-          <div role="group" aria-label="Currency" style="display:flex; background:#FFF; border:1px solid #E5E5E5; border-radius:999px; padding:2px;">
+          <span class="mobile-curr-label" style="font-size:12px; font-weight:600; text-transform:uppercase; color:#8B5CF6; letter-spacing: 0.1em;">Currency</span>
+          <div role="group" aria-label="Currency" style="display:flex; background:#FFF; border:1px solid #E9D5FF; border-radius:999px; padding:2px;">
             <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer;">€</button>
             <button type="button" style="border:none; border-radius:999px; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer;">CHF</button>
           </div>
@@ -217,8 +217,8 @@ js_content = f"""(function() {{
       const bLang = btn.textContent.trim().toLowerCase();
       const isActive = bLang === lang;
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-      btn.style.backgroundColor = isActive ? '#1A1A1A' : 'transparent';
-      btn.style.color = isActive ? '#F7F5F0' : '#666';
+      btn.style.backgroundColor = isActive ? '#2E1065' : 'transparent';
+      btn.style.color = isActive ? '#FFFFFF' : '#8B5CF6';
     }});
 
     // 2. Currency buttons UI
@@ -227,8 +227,8 @@ js_content = f"""(function() {{
       const isEur = bText === '€' || bText === 'EUR';
       const isActive = (isEur && curr === 'EUR') || (!isEur && curr === 'CHF');
       btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-      btn.style.backgroundColor = isActive ? '#1A1A1A' : 'transparent';
-      btn.style.color = isActive ? '#F7F5F0' : '#666';
+      btn.style.backgroundColor = isActive ? '#2E1065' : 'transparent';
+      btn.style.color = isActive ? '#FFFFFF' : '#8B5CF6';
     }});
 
     // 3. Update shipping header text

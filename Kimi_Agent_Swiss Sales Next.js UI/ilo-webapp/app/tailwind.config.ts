@@ -9,17 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: '#FAF7F2',
-        sand: '#F1EBE2',
-        ink: '#211D19',
-        body: '#5C554D',
-        muted: '#8A8178',
-        coral: '#E2583E',
-        coralDark: '#C7452E',
-        teal: '#2E8C8C',
-        mustard: '#D9A521',
-        leaf: '#7A9E5C',
-        hairline: '#E5DDD2',
+        cream: '#FFFFFF',
+        sand: '#F3E8FF',
+        ink: '#2E1065',
+        body: '#4C1D95',
+        muted: '#8B5CF6',
+        coral: '#9333EA',
+        coralDark: '#7E22CE',
+        teal: '#A855F7',
+        mustard: '#C084FC',
+        leaf: '#D8B4FE',
+        hairline: '#E9D5FF',
       },
       fontFamily: {
         display: ['var(--font-fraunces)', 'Georgia', 'serif'],
