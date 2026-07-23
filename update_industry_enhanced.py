@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_content = """<!DOCTYPE html>
 <html lang="en" class="__variable_fdb222 __variable_f367f3">
 <head>
   <meta charSet="utf-8"/>
@@ -410,3 +412,15 @@
   </script>
 </body>
 </html>
+"""
+
+os.makedirs('industry', exist_ok=True)
+with open('industry/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+if os.path.exists('app'):
+    os.makedirs('app/industry', exist_ok=True)
+    with open('app/industry/index.html', 'w', encoding='utf-8') as f:
+        f.write(html_content)
+
+print("Updated /industry/index.html with high-end product images and enhanced UI/UX!")

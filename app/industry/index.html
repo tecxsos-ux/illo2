@@ -56,127 +56,224 @@
   </header>
 
   <main id="main">
-    <!-- Hero Section -->
-    <header class="border-b border-hairline bg-sand py-16 lg:py-24">
+    <!-- Hero Section with Dual Column Layout & Product Visual -->
+    <header class="border-b border-hairline bg-sand py-12 lg:py-20">
       <div class="mx-auto max-w-site px-4 sm:px-6">
-        <div class="mx-auto max-w-3xl text-center">
-          <p class="inline-flex items-center gap-2 rounded-full border border-hairline bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-body">
-            <span class="h-2 w-2 rounded-full bg-coral"></span>
-            Swiss &amp; EU Industrial Solutions
-          </p>
-          <h1 class="mt-6 font-display text-4xl font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-6xl">
-            Swiss Industry &amp; Pharma Bags
-          </h1>
-          <p class="mt-4 font-display text-xl font-medium text-coral">
-            High-quality bags for pharma &amp; industry.
-          </p>
-          <p class="mt-4 text-base leading-relaxed text-body sm:text-lg">
-            Factory-direct from Hong Kong, we supply pharmaceutical companies, laboratories, logistics and manufacturing teams across Switzerland &amp; Europe with durable, customisable bags and pouches.
-          </p>
+        <div class="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <p class="inline-flex items-center gap-2 rounded-full border border-hairline bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-body">
+              <span class="h-2 w-2 rounded-full bg-coral"></span>
+              Swiss &amp; EU Industrial Solutions
+            </p>
+            <h1 class="mt-6 font-display text-4xl font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+              Swiss Industry &amp; Pharma Bags
+            </h1>
+            <p class="mt-4 font-display text-xl font-medium text-coral">
+              High-quality bags for pharma &amp; industry.
+            </p>
+            <p class="mt-4 text-base leading-relaxed text-body sm:text-lg">
+              Factory-direct from Hong Kong, we supply pharmaceutical companies, laboratories, logistics and manufacturing teams across Switzerland &amp; Europe with durable, customisable bags and pouches.
+            </p>
 
-          <!-- Badges -->
-          <div class="mt-8 flex flex-wrap justify-center gap-3 text-xs font-semibold uppercase tracking-wider text-ink">
-            <span class="rounded-full bg-white border border-hairline px-4 py-2 flex items-center gap-2 shadow-sm">
-              <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Factory QC on every batch
-            </span>
-            <span class="rounded-full bg-white border border-hairline px-4 py-2 flex items-center gap-2 shadow-sm">
-              <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Custom sizes &amp; logo print
-            </span>
-            <span class="rounded-full bg-white border border-hairline px-4 py-2 flex items-center gap-2 shadow-sm">
-              <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Direct shipping to CH &amp; EU
-            </span>
+            <!-- Key Feature Badges -->
+            <div class="mt-6 flex flex-wrap gap-2.5 text-xs font-semibold uppercase tracking-wider text-ink">
+              <span class="rounded-full bg-white border border-hairline px-3.5 py-1.5 flex items-center gap-2 shadow-sm">
+                <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Factory QC on every batch
+              </span>
+              <span class="rounded-full bg-white border border-hairline px-3.5 py-1.5 flex items-center gap-2 shadow-sm">
+                <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Custom sizes &amp; logo print
+              </span>
+              <span class="rounded-full bg-white border border-hairline px-3.5 py-1.5 flex items-center gap-2 shadow-sm">
+                <svg class="w-4 h-4 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Direct shipping to CH &amp; EU
+              </span>
+            </div>
+
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a class="btn-primary text-base px-6 py-3" href="#quote-form">Request an industrial quote →</a>
+              <a class="btn-outline text-base px-6 py-3" href="#industrial-pillars">Explore Solutions</a>
+            </div>
           </div>
 
-          <div class="mt-8 flex flex-wrap justify-center gap-4">
-            <a class="btn-primary" href="#quote-form">Request an industrial quote</a>
-            <a class="btn-outline" href="/shop/">Browse All 48 SKUs</a>
+          <!-- Hero Image Collage -->
+          <div class="relative">
+            <div class="overflow-hidden rounded-hero border border-hairline bg-white shadow-md p-2">
+              <img src="/hero-collage.jpg" alt="ilo · easymate Swiss Industry and Pharma Bags collection" width="1200" height="1200" class="aspect-[5/4] w-full object-cover rounded-card" fetchPriority="high"/>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 bg-ink/90 backdrop-blur-md text-cream p-4 rounded-card flex items-center justify-between text-xs sm:text-sm">
+              <span class="font-medium">Direct HK Factory to CH/EU Operations</span>
+              <span class="font-semibold text-coral uppercase tracking-wider">ISO Quality Standard</span>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- 4 Main Industrial Pillars Section -->
-    <section class="mx-auto max-w-site px-4 py-16 sm:px-6 lg:py-20" aria-label="Swiss Industry Solutions">
+    <!-- 4 Main Industrial Pillars Section with Real Images -->
+    <section id="industrial-pillars" class="mx-auto max-w-site px-4 py-16 sm:px-6 lg:py-24" aria-label="Swiss Industry Solutions">
       <div class="text-center max-w-2xl mx-auto">
         <h2 class="font-display text-3xl font-semibold text-ink sm:text-4xl">Specialised Industrial Applications</h2>
-        <p class="mt-3 text-body">Tailored pouch and bag solutions engineered for Swiss precision and European standards.</p>
+        <p class="mt-3 text-body">Tailored pouch and bag solutions engineered for Swiss precision and European industrial standards.</p>
       </div>
 
-      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         <!-- Pillar 1: Pharma & Labs -->
-        <article class="card-hover flex flex-col justify-between rounded-card bg-white p-6 border border-hairline shadow-sm">
+        <article class="card-hover group flex flex-col justify-between overflow-hidden rounded-card bg-white border border-hairline shadow-sm">
           <div>
-            <div class="w-12 h-12 rounded-2xl bg-coral/10 text-coral flex items-center justify-center font-bold text-xl mb-4">
-              🧪
+            <div class="aspect-[4/3] w-full overflow-hidden bg-sand relative">
+              <img src="/products/FC3871-79_0.webp" alt="Pharma & Labs Clear EVA Pouches" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+              <span class="absolute top-3 left-3 bg-ink text-cream text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full">Pharma &amp; Labs</span>
             </div>
-            <h3 class="font-display text-2xl font-semibold text-ink">Pharma &amp; Labs</h3>
-            <p class="mt-3 text-sm leading-relaxed text-body">
-              Clear EVA pouches for samples, documents and SOPs. High-clarity, chemical-resistant and easy to wipe clean in laboratory environments.
-            </p>
+            <div class="p-6">
+              <h3 class="font-display text-2xl font-semibold text-ink">Pharma &amp; Labs</h3>
+              <p class="mt-3 text-sm leading-relaxed text-body">
+                Clear EVA pouches for samples, documents and SOPs. High-clarity, chemical-resistant and easy to wipe clean in laboratory environments.
+              </p>
+            </div>
           </div>
-          <div class="mt-6 border-t border-hairline pt-4 text-xs font-semibold uppercase tracking-wider text-muted">
-            Ideal for: Cleanrooms, Sample Transport, SOP Holders
+          <div class="px-6 pb-6 pt-0">
+            <span class="inline-block text-xs font-semibold text-coral uppercase tracking-wider">SOP &amp; Sample Safe →</span>
           </div>
         </article>
 
         <!-- Pillar 2: Document & Batch Control -->
-        <article class="card-hover flex flex-col justify-between rounded-card bg-white p-6 border border-hairline shadow-sm">
+        <article class="card-hover group flex flex-col justify-between overflow-hidden rounded-card bg-white border border-hairline shadow-sm">
           <div>
-            <div class="w-12 h-12 rounded-2xl bg-teal/10 text-teal flex items-center justify-center font-bold text-xl mb-4">
-              📋
+            <div class="aspect-[4/3] w-full overflow-hidden bg-sand relative">
+              <img src="/products/FC2910_0.webp" alt="Document & Batch Control Zip Pouches" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+              <span class="absolute top-3 left-3 bg-ink text-cream text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full">Batch Control</span>
             </div>
-            <h3 class="font-display text-2xl font-semibold text-ink">Document &amp; Batch Control</h3>
-            <p class="mt-3 text-sm leading-relaxed text-body">
-              Zip pouches with card and label pockets for lot tracking. Barcode-scannable clear windows keep batch records protected on production floors.
-            </p>
+            <div class="p-6">
+              <h3 class="font-display text-2xl font-semibold text-ink">Document &amp; Batch Control</h3>
+              <p class="mt-3 text-sm leading-relaxed text-body">
+                Zip pouches with card and label pockets for lot tracking. Barcode-scannable clear windows keep batch records protected on production floors.
+              </p>
+            </div>
           </div>
-          <div class="mt-6 border-t border-hairline pt-4 text-xs font-semibold uppercase tracking-wider text-muted">
-            Ideal for: Lot Tracking, Production Lines, QA Sheets
+          <div class="px-6 pb-6 pt-0">
+            <span class="inline-block text-xs font-semibold text-coral uppercase tracking-wider">Barcode Visible →</span>
           </div>
         </article>
 
         <!-- Pillar 3: Logistics & Field Teams -->
-        <article class="card-hover flex flex-col justify-between rounded-card bg-white p-6 border border-hairline shadow-sm">
+        <article class="card-hover group flex flex-col justify-between overflow-hidden rounded-card bg-white border border-hairline shadow-sm">
           <div>
-            <div class="w-12 h-12 rounded-2xl bg-mustard/10 text-mustard flex items-center justify-center font-bold text-xl mb-4">
-              📦
+            <div class="aspect-[4/3] w-full overflow-hidden bg-sand relative">
+              <img src="/products/FC201520_0.webp" alt="Logistics & Field Teams Crossbody & Belt Bags" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+              <span class="absolute top-3 left-3 bg-ink text-cream text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full">Field Teams</span>
             </div>
-            <h3 class="font-display text-2xl font-semibold text-ink">Logistics &amp; Field Teams</h3>
-            <p class="mt-3 text-sm leading-relaxed text-body">
-              Crossbody and belt bags that keep mobile staff hands-free. Heavy-duty zips, quick-access pockets and ergonomic straps for active operations.
-            </p>
+            <div class="p-6">
+              <h3 class="font-display text-2xl font-semibold text-ink">Logistics &amp; Field Teams</h3>
+              <p class="mt-3 text-sm leading-relaxed text-body">
+                Crossbody and belt bags that keep mobile staff hands-free. Heavy-duty zips, quick-access pockets and ergonomic straps for active operations.
+              </p>
+            </div>
           </div>
-          <div class="mt-6 border-t border-hairline pt-4 text-xs font-semibold uppercase tracking-wider text-muted">
-            Ideal for: Warehouse Staff, Technicians, Dispatch
+          <div class="px-6 pb-6 pt-0">
+            <span class="inline-block text-xs font-semibold text-coral uppercase tracking-wider">Hands-Free Efficiency →</span>
           </div>
         </article>
 
         <!-- Pillar 4: Custom Production -->
-        <article class="card-hover flex flex-col justify-between rounded-card bg-white p-6 border border-hairline shadow-sm">
+        <article class="card-hover group flex flex-col justify-between overflow-hidden rounded-card bg-white border border-hairline shadow-sm">
           <div>
-            <div class="w-12 h-12 rounded-2xl bg-leaf/10 text-leaf flex items-center justify-center font-bold text-xl mb-4">
-              ⚙️
+            <div class="aspect-[4/3] w-full overflow-hidden bg-sand relative">
+              <img src="/products/FC9660_0.webp" alt="Custom Production Bag Manufacturing" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"/>
+              <span class="absolute top-3 left-3 bg-ink text-cream text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full">Custom OEM</span>
             </div>
-            <h3 class="font-display text-2xl font-semibold text-ink">Custom Production</h3>
-            <p class="mt-3 text-sm leading-relaxed text-body">
-              Custom sizes, colours and logo printing, low MOQ, direct from our factory. We manufacture exact specifications for your workflow.
-            </p>
+            <div class="p-6">
+              <h3 class="font-display text-2xl font-semibold text-ink">Custom Production</h3>
+              <p class="mt-3 text-sm leading-relaxed text-body">
+                Custom sizes, colours and logo printing, low MOQ, direct from our factory. We manufacture exact specifications for your industrial workflow.
+              </p>
+            </div>
           </div>
-          <div class="mt-6 border-t border-hairline pt-4 text-xs font-semibold uppercase tracking-wider text-muted">
-            Ideal for: OEM Projects, Corporate Branding, Custom Sizes
+          <div class="px-6 pb-6 pt-0">
+            <span class="inline-block text-xs font-semibold text-coral uppercase tracking-wider">From 100 Units →</span>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Industrial Quote Request Section -->
+    <!-- Industrial Recommended Products Grid -->
+    <section class="border-t border-hairline bg-sand/40 py-16 lg:py-20" aria-labelledby="skus-title">
+      <div class="mx-auto max-w-site px-4 sm:px-6">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <h2 id="skus-title" class="font-display text-3xl font-semibold text-ink sm:text-4xl">Popular Industrial SKUs</h2>
+            <p class="mt-2 text-body">Tested and deployed by laboratories, warehouses, and industrial units.</p>
+          </div>
+          <a href="/shop/" class="text-sm font-semibold text-coral hover:underline">View All 48 Products →</a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-6">
+          <!-- Item 1 -->
+          <article class="card-hover rounded-card bg-white p-3 border border-hairline">
+            <a href="/product/fc7550-a4/" class="block">
+              <div class="overflow-hidden rounded-[14px] bg-sand">
+                <img src="/products/FC7550-A4_0.webp" alt="Frosted Grid Mesh Handle Tote A4" width="600" height="600" class="aspect-square w-full object-cover"/>
+              </div>
+              <div class="p-2 pt-3">
+                <span class="text-[10px] font-semibold uppercase tracking-wider text-muted">SKU: FC7550-A4</span>
+                <h3 class="font-display text-base font-medium text-ink mt-0.5">Frosted Grid Tote A4</h3>
+                <p class="mt-1 text-sm font-semibold text-ink">€ 3.50 / CHF 3.50</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="card-hover rounded-card bg-white p-3 border border-hairline">
+            <a href="/product/fc3871-79/" class="block">
+              <div class="overflow-hidden rounded-[14px] bg-sand">
+                <img src="/products/FC3871-79_0.webp" alt="Crystal Clear Storage Pouch" width="600" height="600" class="aspect-square w-full object-cover"/>
+              </div>
+              <div class="p-2 pt-3">
+                <span class="text-[10px] font-semibold uppercase tracking-wider text-muted">SKU: FC3871-79</span>
+                <h3 class="font-display text-base font-medium text-ink mt-0.5">Crystal Clear Storage</h3>
+                <p class="mt-1 text-sm font-semibold text-ink">€ 3.00 / CHF 3.00</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="card-hover rounded-card bg-white p-3 border border-hairline">
+            <a href="/product/fc201520/" class="block">
+              <div class="overflow-hidden rounded-[14px] bg-sand">
+                <img src="/products/FC201520_0.webp" alt="Ultra-Light Shoulder Belt Bag" width="600" height="600" class="aspect-square w-full object-cover"/>
+              </div>
+              <div class="p-2 pt-3">
+                <span class="text-[10px] font-semibold uppercase tracking-wider text-muted">SKU: FC201520</span>
+                <h3 class="font-display text-base font-medium text-ink mt-0.5">Field Staff Belt Bag</h3>
+                <p class="mt-1 text-sm font-semibold text-ink">€ 6.50 / CHF 6.00</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="card-hover rounded-card bg-white p-3 border border-hairline">
+            <a href="/product/fc2910/" class="block">
+              <div class="overflow-hidden rounded-[14px] bg-sand">
+                <img src="/products/FC2910_0.webp" alt="3-Ring Binder Zip Pouch" width="600" height="600" class="aspect-square w-full object-cover"/>
+              </div>
+              <div class="p-2 pt-3">
+                <span class="text-[10px] font-semibold uppercase tracking-wider text-muted">SKU: FC2910</span>
+                <h3 class="font-display text-base font-medium text-ink mt-0.5">Binder Batch Pouch</h3>
+                <p class="mt-1 text-sm font-semibold text-ink">€ 3.50 / CHF 3.50</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industrial Quote Request Form Section -->
     <section id="quote-form" class="border-t border-hairline bg-white py-16 lg:py-24" aria-labelledby="quote-title">
       <div class="mx-auto max-w-3xl px-4 sm:px-6">
         <div class="text-center">
-          <h2 id="quote-title" class="font-display text-3xl font-semibold text-ink sm:text-4xl">
+          <span class="rounded-full bg-coral/10 text-coral text-xs font-semibold uppercase tracking-widest px-4 py-1.5">Direct Factory Inquiries</span>
+          <h2 id="quote-title" class="font-display text-3xl font-semibold text-ink sm:text-4xl mt-3">
             Request an industrial quote
           </h2>
           <p class="mt-3 text-lg text-body">
@@ -184,7 +281,7 @@
           </p>
         </div>
 
-        <form id="industrial-form" class="mt-10 space-y-6 bg-sand/60 p-6 sm:p-10 rounded-card border border-hairline">
+        <form id="industrial-form" class="mt-10 space-y-6 bg-sand/60 p-6 sm:p-10 rounded-card border border-hairline shadow-sm">
           <div class="grid gap-6 sm:grid-cols-2">
             <div>
               <label for="ind-name" class="mb-2 block text-xs font-semibold uppercase tracking-wider text-ink">Contact Name *</label>
@@ -192,7 +289,7 @@
             </div>
             <div>
               <label for="ind-company" class="mb-2 block text-xs font-semibold uppercase tracking-wider text-ink">Company / Institution *</label>
-              <input id="ind-company" type="text" required class="w-full rounded-[14px] border border-hairline bg-white px-4 py-3 text-sm text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-coral" placeholder="e.g. Novartis / Roche / Logistics CH"/>
+              <input id="ind-company" type="text" required class="w-full rounded-[14px] border border-hairline bg-white px-4 py-3 text-sm text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-coral" placeholder="e.g. Novartis / Roche / Lonza"/>
             </div>
           </div>
 
