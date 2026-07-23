@@ -859,7 +859,59 @@
     });
   }
 
+
+  // Create Toast notification system for UX feedback
+  function showToast(message, icon) {
+    icon = icon || '✨';
+    let toast = document.getElementById('ux-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'ux-toast';
+      toast.style.cssText = 'position:fixed; bottom:24px; right:24px; z-index:999999; background:rgba(46,16,101,0.95); color:#FFF; padding:14px 22px; border-radius:9999px; font-size:14px; font-weight:600; box-shadow:0 10px 25px -5px rgba(147,51,234,0.5); backdrop-filter:blur(12px); border:1px solid rgba(233,213,255,0.3); transform:translateY(100px); opacity:0; transition:all 0.35s cubic-bezier(0.34,1.56,0.64,1); display:flex; align-items:center; gap:10px; pointer-events:none;';
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = '<span style="font-size:18px;">' + icon + '</span><span>' + message + '</span>';
+    toast.style.transform = 'translateY(0)';
+    toast.style.opacity = '1';
+    
+    clearTimeout(window._toastTimeout);
+    window._toastTimeout = setTimeout(function() {
+      toast.style.transform = 'translateY(100px)';
+      toast.style.opacity = '0';
+    }, 2800);
+  }
+
   document.addEventListener('click', function(e) {
+    const cartBtn = e.target.closest('.btn-cart-cta, button');
+    if (cartBtn && (cartBtn.textContent.includes('Add to cart') || cartBtn.textContent.includes('In den Warenkorb') || cartBtn.textContent.includes('Warenkorb'))) {
+      e.preventDefault();
+      e.stopPropagation();
+      const card = cartBtn.closest('article');
+      const title = card ? (card.querySelector('h3') ? card.querySelector('h3').textContent : 'Item') : 'Item';
+      showToast('Added <b>' + title + '</b> to cart!', '🛒');
+      return;
+    }
+
+    const wishBtn = e.target.closest('button[aria-label="Add to wishlist"]');
+    if (wishBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const isSaved = wishBtn.classList.contains('saved');
+      const svg = wishBtn.querySelector('svg');
+      if (isSaved) {
+        wishBtn.classList.remove('saved');
+        wishBtn.style.color = '#2E1065';
+        if (svg) svg.setAttribute('fill', 'none');
+        showToast('Removed from Wishlist', '🤍');
+      } else {
+        wishBtn.classList.add('saved');
+        wishBtn.style.color = '#9333EA';
+        if (svg) svg.setAttribute('fill', '#9333EA');
+        showToast('Saved to Wishlist!', '💖');
+      }
+      return;
+    }
+
     const btn = e.target.closest('button[aria-label="Open menu"], button[aria-label="Close menu"], #close-mobile-menu');
     if (btn) {
       e.preventDefault();
