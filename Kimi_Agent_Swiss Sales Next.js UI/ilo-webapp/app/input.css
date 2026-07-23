@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-fraunces: 'Fraunces', Georgia, serif;
+    --font-inter: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    background-color: #FAF7F2;
+    color: #211D19;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Unhide SSR motion initial state elements */
+  [style*="opacity:0"], [style*="opacity: 0"] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-coral px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-coralDark;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-full border border-ink px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-ink hover:text-cream;
+  }
+
+  .btn-ink {
+    @apply inline-flex items-center justify-center rounded-full bg-ink px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-coral;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lift;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

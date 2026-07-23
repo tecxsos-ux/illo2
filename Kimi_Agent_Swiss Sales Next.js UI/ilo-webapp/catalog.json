@@ -1,0 +1,1154 @@
+[
+ {
+  "id": 2191,
+  "sku": "FC201520",
+  "slug": "fc201520",
+  "nameZh": "揹肩腰包",
+  "name": {
+   "en": "Ultra-Light Shoulder Belt Bag",
+   "de": "Ultraleichte Schulter-Gürteltasche",
+   "fr": "Sac banane ultraléger"
+  },
+  "cat": "crossbody",
+  "catLabels": [
+   "Crossbody & Belt",
+   "Umhängetaschen",
+   "Bandoulière"
+  ],
+  "priceEur": 6.5,
+  "priceChf": 6.0,
+  "priceHkd": 68.0,
+  "images": [
+   "/products/FC201520_0.webp"
+  ],
+  "accent": "#7FD1E8"
+ },
+ {
+  "id": 2118,
+  "sku": "FC9660",
+  "slug": "fc9660",
+  "nameZh": "純黑雙拉鍊網袋",
+  "name": {
+   "en": "Jet-Black Double-Zip Mesh Pouch",
+   "de": "Tiefschwarzes Mesh-Etui mit Doppelzip",
+   "fr": "Pochette mesh noir double zip"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 16.0,
+  "images": [
+   "/products/FC9660_0.webp"
+  ],
+  "accent": "#F6A5C0"
+ },
+ {
+  "id": 2075,
+  "sku": "FC9490",
+  "slug": "fc9490",
+  "nameZh": "輕紗網手把收納袋",
+  "name": {
+   "en": "Airy Mesh Handle Storage Bag",
+   "de": "Leichter Mesh-Aufbewahrungsbeutel mit Griff",
+   "fr": "Sac de rangement mesh à anse"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 15.0,
+  "images": [
+   "/products/FC9490_0.webp"
+  ],
+  "accent": "#9AD1B0"
+ },
+ {
+  "id": 2057,
+  "sku": "FC8244-P",
+  "slug": "fc8244-p",
+  "nameZh": "迷彩三拉鍊斜揹包 L205xH130mm",
+  "name": {
+   "en": "Camo Triple-Zip Crossbody · 205×130",
+   "de": "Camo Umhängetasche 3 Zip · 205×130",
+   "fr": "Sac bandoulière camo 3 zips · 205×130"
+  },
+  "cat": "crossbody",
+  "catLabels": [
+   "Crossbody & Belt",
+   "Umhängetaschen",
+   "Bandoulière"
+  ],
+  "priceEur": 7.5,
+  "priceChf": 7.0,
+  "priceHkd": 80.0,
+  "images": [
+   "/products/FC8244-P_0.webp"
+  ],
+  "accent": "#F5D06F"
+ },
+ {
+  "id": 2036,
+  "sku": "FC8243-S",
+  "slug": "fc8243-s",
+  "nameZh": "迷彩三隔層斜揹包 L160xH205mm",
+  "name": {
+   "en": "Camo 3-Compartment Crossbody · 160×205",
+   "de": "Camo Umhängetasche 3 Fächer · 160×205",
+   "fr": "Sac bandoulière camo 3 compartiments · 160×205"
+  },
+  "cat": "crossbody",
+  "catLabels": [
+   "Crossbody & Belt",
+   "Umhängetaschen",
+   "Bandoulière"
+  ],
+  "priceEur": 7.5,
+  "priceChf": 7.0,
+  "priceHkd": 80.0,
+  "images": [
+   "/products/FC8243-S_0.webp"
+  ],
+  "accent": "#B8A9D9"
+ },
+ {
+  "id": 2012,
+  "sku": "FC8223-K",
+  "slug": "fc8223-k",
+  "nameZh": "迷彩卡片鎖匙包/零錢包 L120xH105mm",
+  "name": {
+   "en": "Camo Card, Key & Coin Pouch",
+   "de": "Camo Karten- & Schlüsseletui",
+   "fr": "Porte-cartes et clés camo"
+  },
+  "cat": "accessories",
+  "catLabels": [
+   "Small Accessories",
+   "Kleinaccessoires",
+   "Petits accessoires"
+  ],
+  "priceEur": 5.0,
+  "priceChf": 4.5,
+  "priceHkd": 50.0,
+  "images": [
+   "/products/FC8223-K_0.webp"
+  ],
+  "accent": "#F0927A"
+ },
+ {
+  "id": 1991,
+  "sku": "FC8222-P",
+  "slug": "fc8222-p",
+  "nameZh": "迷彩雙拉鍊斜揹包 L200xH120mm",
+  "name": {
+   "en": "Camo Double-Zip Crossbody · 200×120",
+   "de": "Camo Umhängetasche Doppelzip · 200×120",
+   "fr": "Sac bandoulière camo double zip · 200×120"
+  },
+  "cat": "crossbody",
+  "catLabels": [
+   "Crossbody & Belt",
+   "Umhängetaschen",
+   "Bandoulière"
+  ],
+  "priceEur": 6.5,
+  "priceChf": 6.0,
+  "priceHkd": 68.0,
+  "images": [
+   "/products/FC8222-P_0.webp"
+  ],
+  "accent": "#7FD1E8"
+ },
+ {
+  "id": 1964,
+  "sku": "FC8221-S",
+  "slug": "fc8221-s",
+  "nameZh": "迷彩雙拉鍊斜揹包 L150xH200mm",
+  "name": {
+   "en": "Camo Double-Zip Crossbody · 150×200",
+   "de": "Camo Umhängetasche Doppelzip · 150×200",
+   "fr": "Sac bandoulière camo double zip · 150×200"
+  },
+  "cat": "crossbody",
+  "catLabels": [
+   "Crossbody & Belt",
+   "Umhängetaschen",
+   "Bandoulière"
+  ],
+  "priceEur": 6.5,
+  "priceChf": 6.0,
+  "priceHkd": 68.0,
+  "images": [
+   "/products/FC8221-S_0.webp"
+  ],
+  "accent": "#F6A5C0"
+ },
+ {
+  "id": 1942,
+  "sku": "FC8220-M",
+  "slug": "fc8220-m",
+  "nameZh": "迷彩雙拉鍊斜揹包  L250xH180mm",
+  "name": {
+   "en": "Camo Double-Zip Crossbody · 250×180",
+   "de": "Camo Umhängetasche Doppelzip · 250×180",
+   "fr": "Sac bandoulière camo double zip · 250×180"
+  },
+  "cat": "crossbody",
+  "catLabels": [
+   "Crossbody & Belt",
+   "Umhängetaschen",
+   "Bandoulière"
+  ],
+  "priceEur": 7.5,
+  "priceChf": 7.0,
+  "priceHkd": 78.0,
+  "images": [
+   "/products/FC8220-M_0.webp"
+  ],
+  "accent": "#9AD1B0"
+ },
+ {
+  "id": 1929,
+  "sku": "FC7550-A4_2.0",
+  "slug": "fc7550-a4_2_0",
+  "nameZh": "ilo 霧透方格網提把功課袋 340x250mm",
+  "name": {
+   "en": "ilo Frosted Grid Tote A4 2.0",
+   "de": "ilo A4 Tragetasche Frosted Grid 2.0",
+   "fr": "Tote A4 ilo Frosted Grid 2.0"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 3.5,
+  "priceChf": 3.5,
+  "priceHkd": 35.0,
+  "images": [
+   "/products/FC7550-A4_2_0_0.webp"
+  ],
+  "accent": "#F5D06F"
+ },
+ {
+  "id": 1917,
+  "sku": "FC7550-A4",
+  "slug": "fc7550-a4",
+  "nameZh": "EASYMATE 霧透方格網提把功課袋 340x250mm",
+  "name": {
+   "en": "Frosted Grid Mesh Handle Tote A4",
+   "de": "A4 Mesh-Tragetasche Frosted Grid",
+   "fr": "Tote A4 mesh givré à anse"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 3.5,
+  "priceChf": 3.5,
+  "priceHkd": 35.0,
+  "images": [
+   "/products/FC7550-A4_0.webp"
+  ],
+  "accent": "#B8A9D9"
+ },
+ {
+  "id": 1892,
+  "sku": "FC6891-4",
+  "slug": "fc6891-4",
+  "nameZh": "圖袋",
+  "name": {
+   "en": "Artist Portfolio Carry Bag",
+   "de": "Künstler-Portfolio Tragetasche",
+   "fr": "Sac portfolio pour artiste"
+  },
+  "cat": "storage",
+  "catLabels": [
+   "Storage",
+   "Aufbewahrung",
+   "Rangement"
+  ],
+  "priceEur": 11.5,
+  "priceChf": 11.0,
+  "priceHkd": 120.0,
+  "images": [
+   "/products/FC6891-4_0.webp"
+  ],
+  "accent": "#F0927A"
+ },
+ {
+  "id": 1876,
+  "sku": "FC6489-M",
+  "slug": "fc6489-m",
+  "nameZh": "雙拉鍊斜褙袋 260x200mm",
+  "name": {
+   "en": "Everyday Double-Zip Crossbody M",
+   "de": "Alltags-Umhängetasche Doppelzip M",
+   "fr": "Sac bandoulière quotidien M"
+  },
+  "cat": "crossbody",
+  "catLabels": [
+   "Crossbody & Belt",
+   "Umhängetaschen",
+   "Bandoulière"
+  ],
+  "priceEur": 8.5,
+  "priceChf": 8.0,
+  "priceHkd": 88.0,
+  "images": [
+   "/products/FC6489-M_0.webp"
+  ],
+  "accent": "#7FD1E8"
+ },
+ {
+  "id": 1833,
+  "sku": "FC5200",
+  "slug": "fc5200",
+  "nameZh": "霧透網紋雙拉鍊袋",
+  "name": {
+   "en": "Frosted Weave Double-Zip Pouch",
+   "de": "Mattes Doppelzip-Etui Weboptik",
+   "fr": "Pochette double zip tissé givré"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 15.0,
+  "images": [
+   "/products/FC5200_0.webp"
+  ],
+  "accent": "#F6A5C0"
+ },
+ {
+  "id": 1814,
+  "sku": "FC4400-A4_2.0",
+  "slug": "fc4400-a4_2_0",
+  "nameZh": "ilo 霧透方格網提把功課袋 340x250mm",
+  "name": {
+   "en": "ilo Frosted Grid Homework Tote A4 2.0",
+   "de": "ilo A4 Arbeitsmappe Frosted Grid 2.0",
+   "fr": "Tote devoirs A4 ilo 2.0"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 3.5,
+  "priceChf": 3.5,
+  "priceHkd": 35.0,
+  "images": [
+   "/products/FC4400-A4_2_0_0.webp"
+  ],
+  "accent": "#9AD1B0"
+ },
+ {
+  "id": 1797,
+  "sku": "FC4400-A4",
+  "slug": "fc4400-a4",
+  "nameZh": "EASYMATE 霧透方格網提把功課袋 340x250mm",
+  "name": {
+   "en": "Frosted Grid Homework Tote A4",
+   "de": "A4 Arbeitsmappe Frosted Grid",
+   "fr": "Tote devoirs A4 givré"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 3.5,
+  "priceChf": 3.5,
+  "priceHkd": 35.0,
+  "images": [
+   "/products/FC4400-A4_0.webp"
+  ],
+  "accent": "#F5D06F"
+ },
+ {
+  "id": 1746,
+  "sku": "FC4300",
+  "slug": "fc4300",
+  "nameZh": "EVA網格拉鍊袋",
+  "name": {
+   "en": "EVA Grid Zip Pouch",
+   "de": "EVA Zip-Etui Rastermuster",
+   "fr": "Pochette zip EVA quadrillée"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 10.0,
+  "images": [
+   "/products/FC4300_0.webp"
+  ],
+  "accent": "#B8A9D9"
+ },
+ {
+  "id": 1702,
+  "sku": "FC4100",
+  "slug": "fc4100",
+  "nameZh": "有色透明網紋拉鍊袋",
+  "name": {
+   "en": "Tinted Clear Mesh Zip Pouch",
+   "de": "Getöntes Clear-Mesh Zip-Etui",
+   "fr": "Pochette mesh transparent teinté"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 15.0,
+  "images": [
+   "/products/FC4100_0.webp"
+  ],
+  "accent": "#F0927A"
+ },
+ {
+  "id": 1685,
+  "sku": "FC3871-79",
+  "slug": "fc3871-79",
+  "nameZh": "透透收納包",
+  "name": {
+   "en": "Crystal Clear Storage Pouch",
+   "de": "Transparentes Aufbewahrungsetui",
+   "fr": "Pochette de rangement transparente"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 3.0,
+  "priceChf": 3.0,
+  "priceHkd": 30.0,
+  "images": [
+   "/products/FC3871-79_0.webp"
+  ],
+  "accent": "#7FD1E8"
+ },
+ {
+  "id": 1668,
+  "sku": "FC3867-9",
+  "slug": "fc3867-9",
+  "nameZh": "超透明收納包-3件套組 (M+S+XS)",
+  "name": {
+   "en": "Ultra-Clear Pouch 3-Piece Set",
+   "de": "Ultra-Clear Etui 3er-Set",
+   "fr": "Set de 3 pochettes ultra-claires"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 5.0,
+  "priceChf": 4.5,
+  "priceHkd": 50.0,
+  "images": [
+   "/products/FC3867-9_0.webp"
+  ],
+  "accent": "#F6A5C0"
+ },
+ {
+  "id": 1657,
+  "sku": "FC3860-A5",
+  "slug": "fc3860-a5",
+  "nameZh": "A5 高透明拉鍊提包 L250xH180mm",
+  "name": {
+   "en": "A5 High-Clarity Zip Tote",
+   "de": "A5 Zip-Tasche hochtransparent",
+   "fr": "Tote A5 zip ultra-transparent"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 2.5,
+  "priceChf": 2.5,
+  "priceHkd": 25.0,
+  "images": [
+   "/products/FC3860-A5_0.webp"
+  ],
+  "accent": "#9AD1B0"
+ },
+ {
+  "id": 1618,
+  "sku": "FC3840",
+  "slug": "fc3840",
+  "nameZh": "透透馬卡龍輕便袋",
+  "name": {
+   "en": "Macaron Clear Mini Pouch",
+   "de": "Macaron Clear Mini-Etui",
+   "fr": "Mini pochette transparente macaron"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 12.0,
+  "images": [
+   "/products/FC3840_0.webp"
+  ],
+  "accent": "#F5D06F"
+ },
+ {
+  "id": 1607,
+  "sku": "FC3570-M",
+  "slug": "fc3570-m",
+  "nameZh": "斜揹網袋 L25xH18cm",
+  "name": {
+   "en": "Feather Mesh Crossbody 25×18",
+   "de": "Federleichte Mesh-Umhängetasche 25×18",
+   "fr": "Sac bandoulière mesh 25×18"
+  },
+  "cat": "crossbody",
+  "catLabels": [
+   "Crossbody & Belt",
+   "Umhängetaschen",
+   "Bandoulière"
+  ],
+  "priceEur": 5.5,
+  "priceChf": 5.0,
+  "priceHkd": 58.0,
+  "images": [
+   "/products/FC3570-M_0.webp"
+  ],
+  "accent": "#B8A9D9"
+ },
+ {
+  "id": 1579,
+  "sku": "FC2910",
+  "slug": "fc2910",
+  "nameZh": "三孔活頁夾拉鍊袋",
+  "name": {
+   "en": "3-Ring Binder Zip Pouch",
+   "de": "Zip-Etui für 3-Ring-Ordner",
+   "fr": "Pochette zip pour classeur 3 anneaux"
+  },
+  "cat": "storage",
+  "catLabels": [
+   "Storage",
+   "Aufbewahrung",
+   "Rangement"
+  ],
+  "priceEur": 3.5,
+  "priceChf": 3.5,
+  "priceHkd": 35.0,
+  "images": [
+   "/products/FC2910_0.webp"
+  ],
+  "accent": "#F0927A"
+ },
+ {
+  "id": 1556,
+  "sku": "FC2780",
+  "slug": "fc2780",
+  "nameZh": "手挽雙拉鍊袋",
+  "name": {
+   "en": "Hand-Carry Double-Zip Pouch",
+   "de": "Hand-Etui mit Doppelzip",
+   "fr": "Pochette main double zip"
+  },
+  "cat": "work",
+  "catLabels": [
+   "Work & Portfolio",
+   "Arbeit & Portfolio",
+   "Travail & portfolio"
+  ],
+  "priceEur": 3.5,
+  "priceChf": 3.5,
+  "priceHkd": 36.0,
+  "images": [
+   "/products/FC2780_0.webp"
+  ],
+  "accent": "#7FD1E8"
+ },
+ {
+  "id": 1509,
+  "sku": "FC2655",
+  "slug": "fc2655",
+  "nameZh": "多用途三拉鍊袋",
+  "name": {
+   "en": "Multi-Purpose Triple-Zip Pouch",
+   "de": "Mehrzweck-Etui 3 Zip",
+   "fr": "Pochette multi-usage 3 zips"
+  },
+  "cat": "storage",
+  "catLabels": [
+   "Storage",
+   "Aufbewahrung",
+   "Rangement"
+  ],
+  "priceEur": 3.5,
+  "priceChf": 3.5,
+  "priceHkd": 35.0,
+  "images": [
+   "/products/FC2655_0.webp"
+  ],
+  "accent": "#F6A5C0"
+ },
+ {
+  "id": 1462,
+  "sku": "FC2500",
+  "slug": "fc2500",
+  "nameZh": "多用途雙拉鍊袋",
+  "name": {
+   "en": "Multi-Purpose Double-Zip Pouch",
+   "de": "Mehrzweck-Etui Doppelzip",
+   "fr": "Pochette multi-usage double zip"
+  },
+  "cat": "storage",
+  "catLabels": [
+   "Storage",
+   "Aufbewahrung",
+   "Rangement"
+  ],
+  "priceEur": 3.5,
+  "priceChf": 3.5,
+  "priceHkd": 35.0,
+  "images": [
+   "/products/FC2500_0.webp"
+  ],
+  "accent": "#9AD1B0"
+ },
+ {
+  "id": 1431,
+  "sku": "FC2338",
+  "slug": "fc2338",
+  "nameZh": "雙拉鍊多用途網袋",
+  "name": {
+   "en": "Double-Zip Utility Mesh Pouch",
+   "de": "Mesh-Universaletui Doppelzip",
+   "fr": "Pochette mesh utilitaire double zip"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 3.0,
+  "priceChf": 3.0,
+  "priceHkd": 30.0,
+  "images": [
+   "/products/FC2338_0.webp"
+  ],
+  "accent": "#F5D06F"
+ },
+ {
+  "id": 1375,
+  "sku": "FC2330",
+  "slug": "fc2330",
+  "nameZh": "輕量網紗三角收納袋",
+  "name": {
+   "en": "Featherlight Triangle Mesh Pouch",
+   "de": "Ultraleichtes Mesh-Dreiecksetui",
+   "fr": "Pochette triangle mesh ultralégère"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 13.0,
+  "images": [
+   "/products/FC2330_0.webp"
+  ],
+  "accent": "#B8A9D9"
+ },
+ {
+  "id": 1329,
+  "sku": "FC2110",
+  "slug": "fc2110",
+  "nameZh": "雙層拉鍊袋",
+  "name": {
+   "en": "Double-Layer Zip Pouch",
+   "de": "Zweilagiges Zip-Etui",
+   "fr": "Pochette zip double couche"
+  },
+  "cat": "storage",
+  "catLabels": [
+   "Storage",
+   "Aufbewahrung",
+   "Rangement"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 20.0,
+  "images": [
+   "/products/FC2110_0.webp"
+  ],
+  "accent": "#F0927A"
+ },
+ {
+  "id": 1314,
+  "sku": "FC2076",
+  "slug": "fc2076",
+  "nameZh": "便攜事務包附拉鍊袋",
+  "name": {
+   "en": "Portable Organizer with Zip Pocket",
+   "de": "Mobiler Organizer mit Zipfach",
+   "fr": "Organisateur portable avec poche zip"
+  },
+  "cat": "work",
+  "catLabels": [
+   "Work & Portfolio",
+   "Arbeit & Portfolio",
+   "Travail & portfolio"
+  ],
+  "priceEur": 5.5,
+  "priceChf": 5.0,
+  "priceHkd": 60.0,
+  "images": [
+   "/products/FC2076_0.webp"
+  ],
+  "accent": "#7FD1E8"
+ },
+ {
+  "id": 1275,
+  "sku": "FC2064",
+  "slug": "fc2064",
+  "nameZh": "多用途雙拉鍊袋",
+  "name": {
+   "en": "Everyday Double-Zip Pouch",
+   "de": "Alltags-Etui Doppelzip",
+   "fr": "Pochette quotidienne double zip"
+  },
+  "cat": "storage",
+  "catLabels": [
+   "Storage",
+   "Aufbewahrung",
+   "Rangement"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 15.0,
+  "images": [
+   "/products/FC2064_0.webp"
+  ],
+  "accent": "#F6A5C0"
+ },
+ {
+  "id": 1232,
+  "sku": "FC2042",
+  "slug": "fc2042",
+  "nameZh": "多用途拉鍊袋",
+  "name": {
+   "en": "Everyday Zip Pouch",
+   "de": "Alltags Zip-Etui",
+   "fr": "Pochette zip quotidienne"
+  },
+  "cat": "storage",
+  "catLabels": [
+   "Storage",
+   "Aufbewahrung",
+   "Rangement"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 13.0,
+  "images": [
+   "/products/FC2042_0.webp"
+  ],
+  "accent": "#9AD1B0"
+ },
+ {
+  "id": 1207,
+  "sku": "FC1143",
+  "slug": "fc1143",
+  "nameZh": "輕便手提三拉鍊袋",
+  "name": {
+   "en": "Light Carry Triple-Zip Bag",
+   "de": "Leichte Tragetasche 3 Zip",
+   "fr": "Sac à main léger 3 zips"
+  },
+  "cat": "work",
+  "catLabels": [
+   "Work & Portfolio",
+   "Arbeit & Portfolio",
+   "Travail & portfolio"
+  ],
+  "priceEur": 4.5,
+  "priceChf": 4.0,
+  "priceHkd": 45.0,
+  "images": [
+   "/products/FC1143_0.webp"
+  ],
+  "accent": "#F5D06F"
+ },
+ {
+  "id": 1167,
+  "sku": "FC1138",
+  "slug": "fc1138",
+  "nameZh": "多用途雙拉鍊袋",
+  "name": {
+   "en": "Compact Double-Zip Pouch",
+   "de": "Kompaktes Doppelzip-Etui",
+   "fr": "Pochette compacte double zip"
+  },
+  "cat": "storage",
+  "catLabels": [
+   "Storage",
+   "Aufbewahrung",
+   "Rangement"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 16.0,
+  "images": [
+   "/products/FC1138_0.webp"
+  ],
+  "accent": "#B8A9D9"
+ },
+ {
+  "id": 1125,
+  "sku": "FC1080",
+  "slug": "fc1080",
+  "nameZh": "EVA 雙拉鍊U型網袋",
+  "name": {
+   "en": "EVA U-Shape Double-Zip Mesh Pouch",
+   "de": "EVA U-Shape Mesh-Etui Doppelzip",
+   "fr": "Pochette mesh EVA double zip forme U"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 18.0,
+  "images": [
+   "/products/FC1080_0.webp"
+  ],
+  "accent": "#F0927A"
+ },
+ {
+  "id": 1097,
+  "sku": "FC9424-26",
+  "slug": "fc9424-26",
+  "nameZh": "輕網紗提把習作袋",
+  "name": {
+   "en": "Light Mesh Handle Study Bag",
+   "de": "Leichter Mesh-Lernbeutel mit Griff",
+   "fr": "Sac d’étude mesh à anse"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 10.0,
+  "images": [
+   "/products/FC9424-26_0.webp"
+  ],
+  "accent": "#7FD1E8"
+ },
+ {
+  "id": 1075,
+  "sku": "FC3540-47",
+  "slug": "fc3540-47",
+  "nameZh": "編織網多功能立立袋",
+  "name": {
+   "en": "Woven Mesh Stand-Up Pouch",
+   "de": "Gewebtes Mesh Stand-Up Etui",
+   "fr": "Pochette mesh tissé autoportante"
+  },
+  "cat": "travel",
+  "catLabels": [
+   "Travel",
+   "Reisen",
+   "Voyage"
+  ],
+  "priceEur": 3.0,
+  "priceChf": 3.0,
+  "priceHkd": 30.0,
+  "images": [
+   "/products/FC3540-47_0.webp"
+  ],
+  "accent": "#F6A5C0"
+ },
+ {
+  "id": 1037,
+  "sku": "FC721-8",
+  "slug": "fc721-8",
+  "nameZh": "EVA 網格間色拉鍊袋",
+  "name": {
+   "en": "EVA Grid Contrast Zip Pouch",
+   "de": "EVA Zip-Etui Kontrast-Raster",
+   "fr": "Pochette zip EVA contraste"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 10.0,
+  "images": [
+   "/products/FC721-8_0.webp"
+  ],
+  "accent": "#9AD1B0"
+ },
+ {
+  "id": 1016,
+  "sku": "FC6910-16",
+  "slug": "fc6910-16",
+  "nameZh": "手提電腦通勤包",
+  "name": {
+   "en": "Urban Laptop Commuter Briefcase",
+   "de": "Urban Laptop-Business-Tasche",
+   "fr": "Sacoche ordinateur urbaine"
+  },
+  "cat": "laptop",
+  "catLabels": [
+   "Laptop & Work",
+   "Laptop & Arbeit",
+   "Ordinateur & travail"
+  ],
+  "priceEur": 17.0,
+  "priceChf": 16.0,
+  "priceHkd": 180.0,
+  "images": [
+   "/products/FC6910-16_0.webp"
+  ],
+  "accent": "#F5D06F"
+ },
+ {
+  "id": 994,
+  "sku": "FC6921-27",
+  "slug": "fc6921-27",
+  "nameZh": "輕感手提筆電包",
+  "name": {
+   "en": "Feelfree Light Laptop Tote",
+   "de": "Feelfree Leichte Laptop-Tote",
+   "fr": "Tote ordinateur légère Feelfree"
+  },
+  "cat": "laptop",
+  "catLabels": [
+   "Laptop & Work",
+   "Laptop & Arbeit",
+   "Ordinateur & travail"
+  ],
+  "priceEur": 18.0,
+  "priceChf": 17.0,
+  "priceHkd": 190.0,
+  "images": [
+   "/products/FC6921-27_0.webp"
+  ],
+  "accent": "#B8A9D9"
+ },
+ {
+  "id": 968,
+  "sku": "FC392-5",
+  "slug": "fc392-5",
+  "nameZh": "網格雙拉鍊袋-附名片袋",
+  "name": {
+   "en": "Grid Double-Zip Pouch + Card Pocket",
+   "de": "Raster-Etui Doppelzip mit Kartenfach",
+   "fr": "Pochette quadrillée + porte-cartes"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 20.0,
+  "images": [
+   "/products/FC392-5_0.webp"
+  ],
+  "accent": "#F0927A"
+ },
+ {
+  "id": 902,
+  "sku": "FC360-9",
+  "slug": "fc360-9",
+  "nameZh": "網紋拉鍊袋(附名片袋)",
+  "name": {
+   "en": "Mesh Zip Pouch + Card Pocket",
+   "de": "Mesh Zip-Etui mit Kartenfach",
+   "fr": "Pochette mesh zip + porte-cartes"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 9.0,
+  "images": [
+   "/products/FC360-9_0.webp"
+  ],
+  "accent": "#7FD1E8"
+ },
+ {
+  "id": 863,
+  "sku": "FC351-5",
+  "slug": "fc351-5",
+  "nameZh": "雙拉鍊網袋",
+  "name": {
+   "en": "Classic Double-Zip Mesh Pouch",
+   "de": "Klassisches Mesh-Etui Doppelzip",
+   "fr": "Pochette mesh classique double zip"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 15.0,
+  "images": [
+   "/products/FC351-5_0.webp"
+  ],
+  "accent": "#F6A5C0"
+ },
+ {
+  "id": 762,
+  "sku": "FC9xx",
+  "slug": "fc9xx",
+  "nameZh": "雙拉鍊紗網收納袋",
+  "name": {
+   "en": "Double-Zip Gauze Storage Pouch",
+   "de": "Doppelzip-Aufbewahrungsetui Gaze",
+   "fr": "Pochette de rangement gaze double zip"
+  },
+  "cat": "mesh",
+  "catLabels": [
+   "Mesh Pouches",
+   "Mesh-Etuis",
+   "Pochettes mesh"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 15.0,
+  "images": [
+   "/products/FC9xx_0.webp"
+  ],
+  "accent": "#9AD1B0"
+ },
+ {
+  "id": 736,
+  "sku": "FC5",
+  "slug": "fc5",
+  "nameZh": "霧面防水 EVA 拉鍊袋/收納包/收納袋/筆袋",
+  "name": {
+   "en": "Matte Waterproof EVA Zip Pouch",
+   "de": "Mattes wasserdichtes EVA Zip-Etui",
+   "fr": "Pochette zip EVA mate imperméable"
+  },
+  "cat": "travel",
+  "catLabels": [
+   "Travel",
+   "Reisen",
+   "Voyage"
+  ],
+  "priceEur": 2.0,
+  "priceChf": 2.0,
+  "priceHkd": 15.0,
+  "images": [
+   "/products/FC5_0.webp"
+  ],
+  "accent": "#F5D06F"
+ },
+ {
+  "id": 695,
+  "sku": "FB2803",
+  "slug": "fb2803",
+  "nameZh": "透視感多功能收納袋",
+  "name": {
+   "en": "See-Through Multi-Function Pouch",
+   "de": "Transparentes Multifunktions-Etui",
+   "fr": "Pochette multifonction transparente"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 3.0,
+  "priceChf": 3.0,
+  "priceHkd": 30.0,
+  "images": [
+   "/products/FB2803_0.webp"
+  ],
+  "accent": "#B8A9D9"
+ },
+ {
+  "id": 664,
+  "sku": "FB2803_MT",
+  "slug": "fb2803_mt",
+  "nameZh": "透視感多功能收納袋-奶茶色",
+  "name": {
+   "en": "See-Through Pouch · Milk Tea",
+   "de": "Transparentes Etui · Milk Tea",
+   "fr": "Pochette transparente · Milk Tea"
+  },
+  "cat": "clear",
+  "catLabels": [
+   "Clear Pouches",
+   "Transparent",
+   "Transparent"
+  ],
+  "priceEur": 3.0,
+  "priceChf": 3.0,
+  "priceHkd": 30.0,
+  "images": [
+   "/products/FB2803_MT_0.webp"
+  ],
+  "accent": "#F0927A"
+ }
+]
