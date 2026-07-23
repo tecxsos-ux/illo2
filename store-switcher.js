@@ -1,4 +1,3 @@
-
 (function() {
   const PRODUCTS = {
   "fc201520": {
@@ -610,7 +609,9 @@
       sortFeatured: "Featured",
       sortLow: "Price: low to high",
       sortHigh: "Price: high to low",
-      sortName: "Name A–Z"
+      sortName: "Name A–Z",
+      langLabel: "Language",
+      currLabel: "Currency"
     },
     de: {
       shippingEur: "Kostenloser Versand in die EU ab € 49.00 · Direkt ab Hongkonger Manufaktur",
@@ -642,7 +643,9 @@
       sortFeatured: "Empfohlen",
       sortLow: "Preis: aufsteigend",
       sortHigh: "Preis: absteigend",
-      sortName: "Name A–Z"
+      sortName: "Name A–Z",
+      langLabel: "Sprache",
+      currLabel: "Währung"
     },
     fr: {
       shippingEur: "Livraison UE offerte dès € 49.00 · Direct d'usine à Hong Kong",
@@ -674,7 +677,9 @@
       sortFeatured: "En vedette",
       sortLow: "Prix : croissant",
       sortHigh: "Prix : décroissant",
-      sortName: "Nom A–Z"
+      sortName: "Nom A–Z",
+      langLabel: "Langue",
+      currLabel: "Devise"
     }
   };
 
@@ -736,13 +741,26 @@
       shipText.textContent = curr === 'CHF' ? t.shippingChf : t.shippingEur;
     }
 
-    // 4. Update Nav links text
+    // 4. Update Nav links text (header + mobile drawer)
     const navLinks = document.querySelectorAll('header nav[aria-label="Main"] ul li a');
     if (navLinks.length >= 3) {
       if (navLinks[0]) navLinks[0].textContent = t.navShop;
       if (navLinks[1]) navLinks[1].textContent = t.navAbout;
       if (navLinks[2]) navLinks[2].textContent = t.navWholesale;
     }
+
+    const drawerNavLinks = document.querySelectorAll('#mobile-menu-drawer .mobile-nav-link');
+    if (drawerNavLinks.length >= 3) {
+      drawerNavLinks[0].textContent = t.navShop;
+      drawerNavLinks[1].textContent = t.navAbout;
+      drawerNavLinks[2].textContent = t.navWholesale;
+    }
+
+    const drawerLangLabel = document.querySelector('#mobile-menu-drawer .mobile-lang-label');
+    if (drawerLangLabel) drawerLangLabel.textContent = t.langLabel;
+
+    const drawerCurrLabel = document.querySelector('#mobile-menu-drawer .mobile-curr-label');
+    if (drawerCurrLabel) drawerCurrLabel.textContent = t.currLabel;
 
     // 5. Update Add to cart buttons
     document.querySelectorAll('button').forEach(btn => {
@@ -800,30 +818,108 @@
 
   function setupEvents() {
     document.querySelectorAll('[aria-label="Language"] button').forEach(btn => {
-      btn.addEventListener('click', (e) => {
+      btn.onclick = (e) => {
         e.preventDefault();
         const l = btn.textContent.trim().toLowerCase();
         setLang(l);
-      });
+      };
     });
 
     document.querySelectorAll('[aria-label="Currency"] button').forEach(btn => {
-      btn.addEventListener('click', (e) => {
+      btn.onclick = (e) => {
         e.preventDefault();
         const bText = btn.textContent.trim();
         const c = (bText === '€' || bText === 'EUR') ? 'EUR' : 'CHF';
         setCurrency(c);
-      });
+      };
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
+  function setupMobileMenu() {
+    const menuBtn = document.querySelector('button[aria-label="Open menu"], button[aria-label="Close menu"]');
+    if (!menuBtn) return;
+
+    let drawer = document.getElementById('mobile-menu-drawer');
+    if (!drawer) {
+      drawer = document.createElement('div');
+      drawer.id = 'mobile-menu-drawer';
+      drawer.className = 'fixed inset-0 z-50 flex flex-col bg-cream/95 backdrop-blur-lg p-6 transition-all duration-300 opacity-0 pointer-events-none md:hidden';
+      drawer.style.backgroundColor = '#F7F5F0';
+      drawer.innerHTML = `
+        <div class="flex items-center justify-between border-b border-hairline pb-4">
+          <a class="font-display text-2xl font-semibold text-ink" href="/">ilo<span class="text-coral">.</span><span class="ml-2 text-[10px] font-sans font-semibold uppercase tracking-[0.18em] text-muted">easymate</span></a>
+          <button type="button" id="close-mobile-menu" class="inline-flex h-10 w-10 items-center justify-center rounded-full text-ink hover:bg-sand" aria-label="Close menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+        <div class="mt-8 flex flex-col justify-between flex-1">
+          <nav class="flex flex-col gap-6 text-3xl font-display font-semibold text-ink">
+            <a href="/shop/" class="mobile-nav-link hover:text-coral transition-colors">Shop</a>
+            <a href="/about/" class="mobile-nav-link hover:text-coral transition-colors">About</a>
+            <a href="/wholesale/" class="mobile-nav-link hover:text-coral transition-colors">Wholesale</a>
+          </nav>
+          <div class="mt-auto border-t border-hairline pt-6 flex flex-col gap-5">
+            <div class="flex items-center justify-between">
+              <span class="mobile-lang-label text-xs font-semibold uppercase tracking-wider text-muted">Language</span>
+              <div class="flex items-center rounded-full border border-hairline bg-white p-0.5" role="group" aria-label="Language">
+                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors bg-ink text-cream">en</button>
+                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors text-muted hover:text-ink">de</button>
+                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold uppercase transition-colors text-muted hover:text-ink">fr</button>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="mobile-curr-label text-xs font-semibold uppercase tracking-wider text-muted">Currency</span>
+              <div class="flex items-center rounded-full border border-hairline bg-white p-0.5" role="group" aria-label="Currency">
+                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold transition-colors bg-ink text-cream">€</button>
+                <button type="button" class="rounded-full px-3 py-1 text-xs font-semibold transition-colors text-muted hover:text-ink">CHF</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(drawer);
+    }
+
+    function openMenu() {
+      menuBtn.setAttribute('aria-expanded', 'true');
+      drawer.classList.remove('opacity-0', 'pointer-events-none');
+      drawer.classList.add('opacity-100', 'pointer-events-auto');
+      document.body.style.overflow = 'hidden';
       setupEvents();
       applyState();
+    }
+
+    function closeMenu() {
+      menuBtn.setAttribute('aria-expanded', 'false');
+      drawer.classList.remove('opacity-100', 'pointer-events-auto');
+      drawer.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    }
+
+    menuBtn.onclick = (e) => {
+      e.preventDefault();
+      const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+      if (isOpen) closeMenu();
+      else openMenu();
+    };
+
+    const closeBtn = drawer.querySelector('#close-mobile-menu');
+    if (closeBtn) closeBtn.onclick = closeMenu;
+
+    drawer.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.onclick = closeMenu;
     });
-  } else {
+  }
+
+  function init() {
+    setupMobileMenu();
     setupEvents();
     applyState();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();
